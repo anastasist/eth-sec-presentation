@@ -1,7 +1,11 @@
-Ethereum Security Presentation
+# Ethereum Security Presentation
 ---
 
-# Prerequisites
+This presentation was made for the [Computer Security MSc course, M108.CS](https://www.di.uoa.gr/cs)
+
+Solidity and datalog files are all part of course material or my own homework submissions for [Smart Contract Analysis MSc course, M228](http://yanniss.github.io/M228/)
+
+## Prerequisites
 
 Make sure you have the following programs installed:
 
@@ -13,9 +17,9 @@ Make sure you have the following programs installed:
 
 I recommend the `nix` package manager for convenience in installation.
 
-# Running the demos
+## Running the demos
 
-## Reentrancy Attack
+### Reentrancy Attack
 
 Initialize a project with foundry's forge, under the `forge` directory:
 
@@ -30,7 +34,7 @@ And simply run:
 forge test -vvvvv Attacker
 ```
 
-## Datalog Example
+### Datalog Example
 
 Under `datalog` directory, simply run:
 
@@ -38,7 +42,13 @@ Under `datalog` directory, simply run:
 souffle intro.dl
 ```
 
-## Reentrancy Analysis
+Check the generated `Path.csv` file:
+
+```
+bat Path.csv
+```
+
+### Reentrancy Analysis
 
 Under `datalog` directory, run:
 
@@ -63,6 +73,8 @@ bat contract.tac
 Run the analyses on these facts:
 
 ```
+# Might need to update the path to gigahorse repo
+# to properly include a library file, in analyes.dl
 souffle -F . -D . ../../../analyses.dl
 ```
 
@@ -75,7 +87,7 @@ bat Reentrancy.csv
 Repeat the process for the `fixed.hex` file, which is the same contract but without the Reentrancy bug.
 
 
-# Assets
+## Assets
 
 `doge.png` was pulled from the [`presenterm` repository](https://github.com/mfontanini/presenterm)
 

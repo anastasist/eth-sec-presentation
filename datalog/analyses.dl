@@ -1,5 +1,4 @@
-// HW2
-#include "/home/anast/smartcontractanalysis/gigahorse-toolchain/clientlib/decompiler_imports.dl"
+#include "/path/to/gigahorse-toolchain/clientlib/decompiler_imports.dl"
 
 // Utils:
 // Block_Head, Block_Tail, LocalBlockEdge

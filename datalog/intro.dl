@@ -32,7 +32,7 @@ IsNode(n) :-
   Edge(_, n).
 
 .output NodeNum
-.printsize Edge
+// .printsize Edge
 
 .decl MinPath(x:symbol, y:symbol, n:number)
 MinPath(x,y,n) :-
