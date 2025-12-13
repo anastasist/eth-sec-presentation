@@ -1,0 +1,42 @@
+.decl Edge(x: symbol, y: symbol)
+
+Edge("a","b").
+Edge("c","d").
+Edge("a","c").
+Edge("c","b").
+Edge("b","e").
+Edge("e","f").
+Edge("f","c").
+Edge("d","e").
+
+.decl Path(x: symbol, y: symbol, i: number)
+.output Path
+
+Path(x, y, 1) :-
+  Edge(x, y).
+
+Path(x, y, n+1) :-
+  Edge(x, z),
+  Path(z, y, n),
+  //NodeNum def omitted
+  NodeNum(l),
+  n < l.
+
+.decl NodeNum(i: number)
+NodeNum(i) :-
+  i = count: IsNode(_).
+
+.decl IsNode(n: symbol)
+IsNode(n) :-
+  Edge(n, _);
+  Edge(_, n).
+
+.output NodeNum
+.printsize Edge
+
+.decl MinPath(x:symbol, y:symbol, n:number)
+MinPath(x,y,n) :-
+  Path(x,y,_),
+  n = min m: Path(x,y,m).
+
+.output MinPath
