@@ -5,13 +5,11 @@ Ethereum Security Presentation
 
 Make sure you have the following programs installed:
 
-```
-![bat](https://github.com/sharkdp/bat)
-![presenterm](https://github.com/mfontanini/presenterm)
-![souffle](https://souffle-lang.github.io/install)
-![gigahorse](https://github.com/nevillegrech/gigahorse-toolchain)
-![foundry](https://github.com/foundry-rs/foundry)
-```
+* ![bat](https://github.com/sharkdp/bat)
+* ![presenterm](https://github.com/mfontanini/presenterm)
+* ![souffle](https://souffle-lang.github.io/install)
+* ![gigahorse](https://github.com/nevillegrech/gigahorse-toolchain)
+* )![foundry](https://github.com/foundry-rs/foundry)
 
 I recommend the `nix` package manager for convenience in installation.
 
@@ -79,6 +77,6 @@ Repeat the process for the `fixed.hex` file, which is the same contract but with
 
 # Assets
 
-`doge.png` was pulled from the `presenterm` repository
+`doge.png` was pulled from the [`presenterm` repository](https://github.com/mfontanini/presenterm)
 
 `eth-diamond-(purple).png` was pulled from [ethereum.org/assets](https://ethereum.org/assets/)
