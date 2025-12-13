@@ -9,7 +9,7 @@ Make sure you have the following programs installed:
 * ![presenterm](https://github.com/mfontanini/presenterm)
 * ![souffle](https://souffle-lang.github.io/install)
 * ![gigahorse](https://github.com/nevillegrech/gigahorse-toolchain)
-* )![foundry](https://github.com/foundry-rs/foundry)
+* ![foundry](https://github.com/foundry-rs/foundry)
 
 I recommend the `nix` package manager for convenience in installation.
 
