@@ -9,13 +9,22 @@ Solidity and datalog files are all part of course material or my own homework su
 
 Make sure you have the following programs installed:
 
-* ![bat](https://github.com/sharkdp/bat)
-* ![presenterm](https://github.com/mfontanini/presenterm)
-* ![souffle](https://souffle-lang.github.io/install)
-* ![gigahorse](https://github.com/nevillegrech/gigahorse-toolchain)
-* ![foundry](https://github.com/foundry-rs/foundry)
+* [bat](https://github.com/sharkdp/bat)
+* [presenterm](https://github.com/mfontanini/presenterm)
+* [souffle](https://souffle-lang.github.io/install)
+* [gigahorse](https://github.com/nevillegrech/gigahorse-toolchain)
+* [foundry](https://github.com/foundry-rs/foundry)
 
 I recommend the `nix` package manager for convenience in installation.
+
+## Viewing the presentation
+
+Just run the convenience one-liner script:
+
+```
+./present.sh
+```
+
 
 ## Running the demos
 
